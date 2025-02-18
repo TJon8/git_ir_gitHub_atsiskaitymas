@@ -11,20 +11,58 @@
 <main>
   <section id="hero">
     <div class="hero-content">
-      <h1 class="hero-title">METAVERSE</h1>
-      <p class="hero-subtitle">INNOVATION THAT WILL SHAPE HOW WE CONNECT IN THE WORLD AN OPPORTUNITY FOR EVERYBODY</p>
-
+      <div class="diamond-circle">
+        <img src="resources/gem-regular.svg" alt="Diamond Icon" />
+      </div>
+      <div class="hero-text">
+        <h1>METAVERSE</h1>
+        <p>INNOVATION THAT WILL SHAPE HOW WE CONNECT IN THE WORLD AN OPPORTUNITY FOR EVERYBODY.</p>
+      </div>
       <div class="button-group">
-        <button class="open-tab">INTRO</button>
-        <button class="open-tab">WORK</button>
-        <button class="open-tab">ABOUT</button>
-        <button class="open-tab">CONTACT</button>
+        <button class="open-tab" data-tab="introTab">INTRO</button>
+        <button class="open-tab" data-tab="workTab">WORK</button>
+        <button class="open-tab" data-tab="aboutTab">ABOUT</button>
+        <button class="open-tab" data-tab="contactTab">CONTACT</button>
       </div>
     </div>
   </section>
+
+<div id="overlay"></div>
+
+<section class="tab" id="introTab">
+    <div class="tab-content">
+    <button class="close-tab">
+    <img src="pictures/xmark-solid.svg" alt="Close" />
+    </button>
+    </div>
+</section>
+
+<section class="tab" id="workTab">
+    <div class="tab-content">
+    <button class="close-tab">
+    <img src="pictures/xmark-solid.svg" alt="Close" />
+    </button>
+    </div>
+</section>  
+
+<section class="tab" id="aboutTab">
+    <div class="tab-content">
+    <button class="close-tab">
+    <img src="pictures/xmark-solid.svg" alt="Close" />
+    </button>
+    </div>
+</section> 
+  
+<section class="tab" id="contactTab">
+    <div class="tab-content">
+    <button class="close-tab">
+    <img src="pictures/xmark-solid.svg" alt="Close" />
+    </button>
+    </div>
+</section>
+
 </main>
 
 <script src="main.js"></script>
-
 </body>
 </html>
