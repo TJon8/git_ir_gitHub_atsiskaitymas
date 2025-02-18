@@ -190,13 +190,13 @@ body {
       line-height: 1.6;
     }
     .hero-text a {
-        color: #fff;          
+        color: #1593db;          
         text-decoration: none; 
         cursor: pointer;       
         transition: color 0.3s;
     }
     .hero-text a:hover {
-        color: #053e4d;
+        color: #cebc20;
         text-decoration: underline; 
     }
   
