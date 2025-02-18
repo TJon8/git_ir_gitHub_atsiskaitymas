@@ -9,7 +9,9 @@ body {
     font-family: sans-serif;
     color: #fff;
     min-height: 100vh;
-    background: url("resources/bg.jpg") no-repeat center center/cover;
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url("resources/bg.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -68,22 +70,25 @@ body {
 }
   
 .button-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    display: flex;            
+    border: 1px solid #fff;     
+    border-radius: 4px;        
+    overflow: hidden;          
 }
-  
 .button-group button {
     background: transparent;
-    border: 1px solid #fff;
+    border: none;             
     color: #fff;
-    padding: 0.75rem;
+    padding: 0.75rem 1.5rem;    
     cursor: pointer;
-    transition: background 0.3s;
-    font-size: 0.9rem;
+    flex: 1;                    
+    text-transform: uppercase;  
     letter-spacing: 1px;
+    transition: background 0.3s;
 }
-  
+.button-block button:not(:last-child) {
+    border-right: 1px solid #fff; /* a vertical line between each button */
+}
 .button-group button:hover {
     background: rgba(255,255,255,0.2);
 }
@@ -208,17 +213,6 @@ body {
         color: #cebc20;
         text-decoration: underline; 
     }
-  
-    .button-group {
-      flex-direction: row;
-      justify-content: center;
-    }
-    .button-group button {
-      padding: 0.75rem 2rem;
-      font-size: 1rem;
-      margin: 0 0.5rem; 
-    }
-  
     .tab {
       max-width: 1000px; 
     }
