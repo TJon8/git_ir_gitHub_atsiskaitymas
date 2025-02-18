@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #fff;
+    background-color: #000; /* Fallback if no bg image. Adjust as needed. */
+    /* If you prefer the hero background in <body> instead of #hero, 
+       you can do: background: url("pictures/bg.jpg") no-repeat center center/cover; */
+    min-height: 100vh;
+}
