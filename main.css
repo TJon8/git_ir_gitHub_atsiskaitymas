@@ -86,3 +86,69 @@ body {
   .button-group button:hover {
     background: rgba(255,255,255,0.2);
 }
+
+.tab {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: #222; 
+    width: 80%;
+    max-width: 400px;
+    padding: 1rem;
+    display: none;    
+    z-index: 1000;   
+    border-radius: 4px;
+}
+  
+  .tab.active {
+    display: block;
+}
+  
+/* Inside each tab: scroll if content is tall */
+  .tab-content {
+    position: relative;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding-right: 1rem;
+}
+  
+/* The top area with the heading and close button */
+  .tab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+  
+/* The heading in the tab */
+  .tab-header h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+  
+/* The close button */
+  .close-tab {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+  
+  .close-tab img {
+    width: 24px; 
+    height: 24px;
+}
+  
+/* Media styling inside the tab (img/video) */
+  .tab-content img,
+  .tab-content video {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 1rem;
+}
+  
+/* Paragraph spacing in the tab */
+  .tab-content p {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
