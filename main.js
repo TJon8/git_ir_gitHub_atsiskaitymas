@@ -23,6 +23,7 @@ closeTabButtons.forEach(btn => {
     }
   });
 });
+
 overlay.addEventListener('click', () => {
   tabs.forEach(t => t.classList.remove('active'));
   overlay.classList.remove('active');
