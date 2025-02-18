@@ -189,6 +189,16 @@ body {
       font-size: 1.1rem; 
       line-height: 1.6;
     }
+    .hero-text a {
+        color: #fff;          
+        text-decoration: none; 
+        cursor: pointer;       
+        transition: color 0.3s;
+    }
+    .hero-text a:hover {
+        color: #053e4d;
+        text-decoration: underline; 
+    }
   
     .button-group {
       flex-direction: row;
