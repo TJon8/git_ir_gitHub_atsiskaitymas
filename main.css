@@ -73,7 +73,10 @@ body {
     display: flex;            
     border: 1px solid #fff;     
     border-radius: 4px;        
-    overflow: hidden;          
+    overflow: hidden;
+    width: 80%;          
+    max-width: 600px;
+    margin: 0 auto;          
 }
 .button-group button {
     background: transparent;
@@ -86,7 +89,7 @@ body {
     letter-spacing: 1px;
     transition: background 0.3s;
 }
-.button-block button:not(:last-child) {
+.button-group button:not(:last-child) {
     border-right: 1px solid #fff; /* a vertical line between each button */
 }
 .button-group button:hover {
