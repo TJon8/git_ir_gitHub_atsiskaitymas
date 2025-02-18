@@ -70,7 +70,8 @@ body {
 }
   
 .button-group {
-    display: flex;            
+    display: flex;
+    flex-direction: column;            
     border: 1px solid #fff;     
     border-radius: 4px;        
     overflow: hidden;
@@ -90,7 +91,7 @@ body {
     transition: background 0.3s;
 }
 .button-group button:not(:last-child) {
-    border-right: 1px solid #fff; /* a vertical line between each button */
+    border-bottom: 1px solid #fff; 
 }
 .button-group button:hover {
     background: rgba(255,255,255,0.2);
@@ -175,6 +176,10 @@ body {
       width: 90%;
       max-width: 1200px;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
   
     .diamond-circle {
@@ -191,7 +196,7 @@ body {
       border-bottom: 1px solid #fff;
       padding: 2rem 0;
       margin-bottom: 2rem;
-      max-width: 800px; 
+      max-width: 1200px; 
     }
     .hero-text h1 {
       font-size: 2.5rem;
@@ -215,6 +220,15 @@ body {
     .hero-text a:hover {
         color: #cebc20;
         text-decoration: underline; 
+    }
+    .button-group {
+        flex-direction: row;        
+      }
+    
+    .button-group button:not(:last-child) {
+        border-bottom: none;       
+        border-right: 1px solid #fff; 
+      }
     }
     .tab {
       max-width: 1000px; 
