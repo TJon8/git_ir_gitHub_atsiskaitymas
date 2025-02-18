@@ -136,6 +136,11 @@ body {
   .close-tab img {
     width: 24px; 
     height: 24px;
+    transition: transform 1s ease;
+}
+
+  .close-tab:hover img {
+    transform: rotate(90deg); 
 }
   
   .tab-content img,
